@@ -1,0 +1,43 @@
+WRITTERN MIDTERM EXAMINATION
+(Question & Answer)
+
+Name: Ariannette S. Omawas
+Section: BSIT-3A
+
+1. What is the primary operational difference between git fetch and git pull?
+Answer: fetch downloads changes from repository but won't apply it to your current branch. 
+Meanwhile, pull gets changes and actually applie it to your current branch. 
+
+2. You have uncommmitted changes in your working directory and need to temporarily 
+switch to another branch. Which worflow prevents Git from blocking the checkout due to file overwrites. 
+Answer: git stash 
+
+3. When executing a git merge --no-ff command, what specific behavior is enforced by Git?
+Answer: Merging even though the fast-forwarding merge is doable. 
+
+4. What happens when you check out specific commit hash directly (e.g. git checkout a1b2c3d)
+instead of a branch name?
+Answer: The Git is placed in a detached HEAD state. 
+
+5. You need to apply a speceific bug-fix commit from a development branch onto a stable release branch without merging the entire branch history.
+Which command should you use?
+Answer: git cherry-pick <commit-hash>
+
+6. After performing a destructive git reset --hard operation, you realize you lost recent commits that were not on any branch.
+Which utility can retrieve these dangling commits?
+Answer: git reflog
+
+7. You want to remove untracked files and directories from your working trees, including ignored files listed in .gitignore. Which command 
+flag combinatiom achieves this?
+Answer: git clean -fdx
+
+8. You need to undo a public commit that has already been pushed to a shared remote repository without altering the existing commit history or 
+disrupting collaborators. Which command is appropriate?
+Answer: git revert <commit-hash>
+
+9. You want to identify he specific commit that intorduced a regression bug in codebase with hundreds of historical commits. 
+Which utility automates this binary search progress?
+Answer: git bisect
+
+10. What is the function of the --amend flag when used with git commit?
+Answer: To modify the recent existing commit. Usually to correct the commit.  
